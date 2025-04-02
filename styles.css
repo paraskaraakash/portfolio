@@ -1,0 +1,514 @@
+/* 🌟 Default Light & Dark Mode Styles */
+body.light-mode {
+    background: url('assets/background.jpg') no-repeat center center/cover;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* 🌟 Navbar */
+.navbar {
+    background-color: rgb(45, 44, 44);
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(228, 215, 215);
+}
+
+
+.navbar-brand:hover {
+    background-color: yellow;
+    opacity: 1;
+}
+
+/* .navbar-brand .a:hover{
+
+    background-color: #ffcc00;
+} */
+
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+
+#toggleMode {
+    background: #ffcc00;
+    color: black;
+    border-radius: 10px;
+    padding: 8px 15px;
+    transition: 0.3s ease;
+}
+
+#toggleMode:hover {
+    background: black;
+    color: white;
+}
+
+/* 🌟 Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    gap: 50px;
+}
+
+/* 🌟 Profile Image (Left Side) */
+.profile-img img {
+    width: 200px;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img img:hover {
+    transform: scale(1.1);
+}
+
+/* 🌟 Hero Content (Right Side) */
+.hero-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* 🌟 Animated Text */
+.animated-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🌟 About Section */
+.about-text {
+    font-size: 1rem;
+    color: #efdddd;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: left;   
+
+    
+}
+
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* 🌟 Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 140px;
+}
+
+.footer-icons {
+    margin-top: 10px;
+}
+
+.footer-icons img {
+    width: 20px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* 🌟 Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-img img {
+        width: 150px;
+    }
+    .hero-content {
+        text-align: center;
+    }
+}
+
+ /* Navbar Styling */
+ .navbar {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    padding: 12px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #dcd7d7 !important;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd !important;
+    font-size: 1.1rem;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12 !important;
+}
+
+/* Dark Mode Button */
+#toggleMode {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(243, 156, 18, 0.5);
+    cursor: pointer;
+}
+
+#toggleMode:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(243, 156, 18, 0.8);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .navbar {
+    background: linear-gradient(135deg, #1b1b1b, #2c2c2c);
+}
+
+body.dark-mode .navbar-nav .nav-link {
+    color: #bbb !important;
+}
+
+body.dark-mode #toggleMode {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    box-shadow: 0px 4px 8px rgba(46, 204, 113, 0.5);
+}
+
+body.dark-mode #toggleMode:hover {
+    box-shadow: 0px 6px 12px rgba(46, 204, 113, 0.8);
+}
+
+/* About Section */
+.about-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background: rgba(19, 18, 18, 0.578);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-container h2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #f39c12;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ddd;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Resume Button */
+.btn-resume {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.5);
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.btn-resume:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(243, 156, 18, 0.7);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* 🌟 Resume Page Styling */
+.resume-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e1e1e, #4e54c8);
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.animated-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff9a44, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.resume-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.resume-preview {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border: 2px solid #f39c12;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(243, 156, 18, 0.7);
+}
+
+.download-btn {
+    background: #f39c12;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background- 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+    background: #e67e22;
+}
+
+/* 🌟 Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🌟 Body & HTML Full Height */
+
+
+/* 🌟 Main Content (Pushes Footer Down) */
+.main-content {
+    flex: 1;
+}
+
+/* 🌟 Sticky Footer */
+.footer {
+    text-align: center;
+    padding: 12px;
+    background: #1e1e1e;
+    color: white;
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Skills Page Styling */
+
+.skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    display: inline-block;
+    background: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: #007bff;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth Fade-in Animation */
+.projects {
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Project Card Styling */
+.project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Image Styling with Overlay Effect */
+.project-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 123, 255, 0.1);
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+/* Project Title */
+.project-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover h3 {
+    color: #007bff;
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover p {
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #343a40;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
