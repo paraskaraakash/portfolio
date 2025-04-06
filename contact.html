@@ -78,8 +78,7 @@
         <input type="text" class="form-control" name="from_name" placeholder="Your Full Name" required />
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control
-" name="from_email" placeholder="Your Email Address" required />
+        <input type="email" class="form-control" name="from_email" placeholder="Your Email Address" required />
       </div>
       <div class="mb-3">
         <textarea class="form-control" name="message" rows="4" placeholder="Type your message here..." required></textarea>
@@ -98,7 +97,7 @@
   <!-- EmailJS Script -->
   <script>
     (function() {
-      emailjs.init("x_V4UivMPu8A4E6Jj"); // ✅ Your public key here
+      emailjs.init("x_V4UivMPu8A4E6Jj"); // ✅ Your EmailJS public key
     })();
 
     document.getElementById('contact-form').addEventListener('submit', function(e) {
@@ -108,7 +107,7 @@
         .then(function(response) {
           document.getElementById('response').innerText = "✅ Message sent successfully!";
         }, function(error) {
-          console.log("EmailJS Error:", error);
+          console.error("EmailJS Error:", error);
           document.getElementById('response').innerText = "❌ Failed to send message. Please try again.";
         });
 
